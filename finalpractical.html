@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Final practical</title>
+        
+        <script>            
+            
+            function text_stuff(bird){
+                if (bird === "Pardalote"){
+                    var output = 'Pardalote by fir0002 (CC-by-NC)';
+                    var element = document.getElementById('myText');
+                    element.innerHTML = output}
+
+                else if (bird === "Purple Swamp Hen"){
+                    var output = 'Purple swamp hen by Toby Hudson (CC-by-SA)';
+                    var element = document.getElementById('myText');
+                    element.innerHTML = output;}
+
+                else if (bird === "White-headed Stilt"){
+                    var output = 'White-headed Stilt by JJ Harrison (CC-by-SA)';
+                    var element = document.getElementById('myText');
+                    element.innerHTML = output;}
+
+                else if (bird === "Inland Thornbill"){
+                    var output = 'Inland Thornbill by Peter Jacobs (CC-by-SA)';
+                    var element = document.getElementById('myText');
+                    element.innerHTML = output;}
+
+                else if (bird === "Rose Robin"){
+                    var output = 'Rose Robin by JJ Harrison (CC-by-SA)';
+                    var element = document.getElementById('myText');
+                    element.innerHTML = output;}
+                }        
+        </script>
+
+        <style>
+            body {background-color: turquoise;}
+            
+            table { 
+                text-align: 'center';
+                border: 1px solid turquoise;
+                padding: 5px;}
+
+            th {text-align: 'center';
+                padding: 50px;}
+            
+            p {text-align: 'center';}
+            
+            .center {display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;}            
+
+        </style>
+    </head>
+
+    <body>
+        
+        <H1 style = 'text-align: center; font-size:130%'> <b>Birds</b> and <i>stuff</i> </H1>
+        
+        <img src="http://www.outgrabe.net/bird00.jpg"; class ='center'; id="myImage" >
+        
+        <p id="myText"; class ='center'; style = 'font-size:80%'>Pardalote by fir0002 (CC-by-NC)</p>
+        
+    <table >
+
+        <thead class = 'center'>
+            <tr>
+                <th><a href="#" onclick="text_stuff(bird='Pardalote');document.getElementById('myImage').src='http://www.outgrabe.net/bird00.jpg'">Pardalote</a></th>
+                <th><a href="#" onclick="text_stuff(bird='Purple Swamp Hen'); document.getElementById('myImage').src='http://www.outgrabe.net/bird01.jpg'">Purple Swamp Hen</a></th>
+                <th><a href="#" onclick="text_stuff(bird='White-headed Stilt'); document.getElementById('myImage').src='http://www.outgrabe.net/bird02.jpg'">White-headed Stilt</a></th>
+                <th><a href="#" onclick="text_stuff(bird='Inland Thornbill'); document.getElementById('myImage').src='http://www.outgrabe.net/bird03.jpg'">Inland Thornbill</a></th>
+                <th><a href="#" onclick="text_stuff(bird='Rose Robin'); document.getElementById('myImage').src='http://www.outgrabe.net/bird04.jpg'">Rose Robin</a></th>
+               
+                
+            </tr>
+        </thead>
+    </table>
+</body>
+
+</html>
